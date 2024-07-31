@@ -13,9 +13,12 @@ import { SharedModule } from 'src/shared/shared.module';
     ProductDetailsComponent
   ],
   imports: [
-    CommonModule, HttpClientModule, SharedModule
+    CommonModule,
+     HttpClientModule,
+      SharedModule,
   ],
-  exports: [AllProductsComponent,
+  exports: [
+    AllProductsComponent,
     ProductDetailsComponent
   ],
 

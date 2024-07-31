@@ -7,6 +7,8 @@ import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { TruncatePipe } from './pipes/truncate.pipe';
 import { RouterModule } from '@angular/router';
 import { ProductsModule } from 'src/products/products.module';
+import { SpinnerComponent } from './components/spinner/spinner.component';
+import { SelectComponent } from './components/select/select.component';
 
 
 
@@ -16,11 +18,21 @@ import { ProductsModule } from 'src/products/products.module';
     FooterComponent,
     LayoutComponent,
     SidebarComponent,
-    TruncatePipe
+    TruncatePipe,
+    SpinnerComponent,
+    SelectComponent
   ],
   imports: [
     CommonModule,RouterModule
   ],
-  exports: [HeaderComponent, FooterComponent, SidebarComponent, TruncatePipe,LayoutComponent],
+  exports: [
+    HeaderComponent,
+     FooterComponent,
+      SidebarComponent,
+       TruncatePipe,
+       LayoutComponent,
+       SpinnerComponent,
+       SelectComponent
+      ],
 })
 export class SharedModule { }
