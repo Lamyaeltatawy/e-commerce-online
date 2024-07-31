@@ -5,6 +5,8 @@ import { FooterComponent } from './components/footer/footer.component';
 import { LayoutComponent } from './components/layout/layout.component';
 import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { TruncatePipe } from './pipes/truncate.pipe';
+import { RouterModule } from '@angular/router';
+import { ProductsModule } from 'src/products/products.module';
 
 
 
@@ -17,7 +19,8 @@ import { TruncatePipe } from './pipes/truncate.pipe';
     TruncatePipe
   ],
   imports: [
-    CommonModule
-  ]
+    CommonModule,RouterModule
+  ],
+  exports: [HeaderComponent, FooterComponent, SidebarComponent, TruncatePipe,LayoutComponent],
 })
 export class SharedModule { }

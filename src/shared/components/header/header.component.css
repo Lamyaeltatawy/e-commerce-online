@@ -1,0 +1,11 @@
+.navbar {
+    background-color: #ffffff08 !important;
+    border-bottom: 1px solid #0000001a !important;
+  }
+  .navbar-brand {
+    margin-right: 25%;
+  }
+  .navbar-nav li {
+    margin-right: 25px;
+  }
+  
