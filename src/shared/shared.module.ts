@@ -9,6 +9,7 @@ import { RouterModule } from '@angular/router';
 import { ProductsModule } from 'src/products/products.module';
 import { SpinnerComponent } from './components/spinner/spinner.component';
 import { SelectComponent } from './components/select/select.component';
+import { CardComponent } from './components/card/card.component';
 
 
 
@@ -20,7 +21,8 @@ import { SelectComponent } from './components/select/select.component';
     SidebarComponent,
     TruncatePipe,
     SpinnerComponent,
-    SelectComponent
+    SelectComponent,
+    CardComponent
   ],
   imports: [
     CommonModule,RouterModule
@@ -32,7 +34,8 @@ import { SelectComponent } from './components/select/select.component';
        TruncatePipe,
        LayoutComponent,
        SpinnerComponent,
-       SelectComponent
+       SelectComponent,
+       CardComponent
       ],
 })
 export class SharedModule { }

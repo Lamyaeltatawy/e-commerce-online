@@ -1,0 +1,19 @@
+<div class="container">
+    <div class="card" style="width: 18rem;" *ngFor="let product of data">
+        <img src="{{product.image}}" class="card-img-top" alt="product" 
+            style="width: 50%; height:13rem;">
+        <div class="card-body">
+            <div class="description">
+                <h3>{{product.title}}</h3>
+            </div>
+            <div class="actions">
+                <button   class="btn btn-success" (click)="selectedProduct(product)">Add to cart</button>
+                <!-- <div class="d-flex" *ngIf="clicked">
+                    <input type="number" class="form-control w-50"/>
+                    <button class="btn btn-success" >add</button>
+                </div> -->
+                <span class="price">{{product.price}} $</span>
+            </div>
+        </div>
+    </div>
+</div>

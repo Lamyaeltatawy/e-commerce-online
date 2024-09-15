@@ -1,36 +1,11 @@
-.card {
-    align-items: center !important;
-    &:hover{
-      box-shadow: 0 0 10px 0 rgba(5, 0, 40, 0.411)
-    }
-  }
-  .card-body {
-    border-top: 1px solid #02020212;
-    width: 100%;
-  }
-  .actions {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  .price {
-    padding: 8px;
-    background-color: #ff8100;
-    border-radius: 13px;
-  }
+
   .products-list{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     gap: 23px;
   }
-  .description{
-    height: 80px;
-    overflow-y: hidden;
-    h3{
-      font-size: 17px !important;
-    }
-  }
+  
   .spinner{
     text-align: center;
   }

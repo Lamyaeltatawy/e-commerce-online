@@ -17,3 +17,4 @@ export class ProductsService {
   GetFilteredProducts(selectedCategory:string){
     return this.http.get(environment.baseApi +'products/category/'+selectedCategory);
   }}
+  
