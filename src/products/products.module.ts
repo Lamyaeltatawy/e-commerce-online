@@ -4,6 +4,7 @@ import { AllProductsComponent } from './components/all-products/all-products.com
 import { ProductDetailsComponent } from './components/product-details/product-details.component';
 import { HttpClientModule } from '@angular/common/http';
 import { SharedModule } from 'src/shared/shared.module';
+import { FormsModule } from '@angular/forms';
 
 
 
@@ -16,6 +17,7 @@ import { SharedModule } from 'src/shared/shared.module';
     CommonModule,
      HttpClientModule,
       SharedModule,
+      FormsModule
   ],
   exports: [
     AllProductsComponent,

@@ -68,7 +68,7 @@ export class AllProductsComponent implements OnInit {
       this.cartProducts =JSON.parse(localStorage.getItem("cart")!)
  
       let exist = this.cartProducts.find((item)=>{
-        return item.id.toString() === product.id.toString();
+        return item.id == product.id;
       })
       console.log("exist", exist);
       

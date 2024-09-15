@@ -7,11 +7,11 @@
                 <h3>{{product.title}}</h3>
             </div>
             <div class="actions">
-                <button   class="btn btn-success" (click)="selectedProduct(product)">Add to cart</button>
-                <!-- <div class="d-flex" *ngIf="clicked">
-                    <input type="number" class="form-control w-50"/>
-                    <button class="btn btn-success" >add</button>
-                </div> -->
+                <button   class="btn btn-success" *ngIf="!product.clicked" (click)="product.clicked = true"  >Add to cart</button>
+                <div class="d-flex" *ngIf="product.clicked">
+                    <input type="number" class="form-control w-50" [(ngModel)]="input"/>
+                    <button class="btn btn-success" (click)="selectedProduct(product)" >add</button>
+                </div>
                 <span class="price">{{product.price}} $</span>
             </div>
         </div>

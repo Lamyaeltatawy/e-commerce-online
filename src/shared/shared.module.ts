@@ -10,6 +10,7 @@ import { ProductsModule } from 'src/products/products.module';
 import { SpinnerComponent } from './components/spinner/spinner.component';
 import { SelectComponent } from './components/select/select.component';
 import { CardComponent } from './components/card/card.component';
+import { FormsModule } from '@angular/forms';
 
 
 
@@ -25,7 +26,7 @@ import { CardComponent } from './components/card/card.component';
     CardComponent
   ],
   imports: [
-    CommonModule,RouterModule
+    CommonModule,RouterModule,FormsModule
   ],
   exports: [
     HeaderComponent,
