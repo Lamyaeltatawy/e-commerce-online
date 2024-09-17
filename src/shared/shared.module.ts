@@ -26,7 +26,7 @@ import { FormsModule } from '@angular/forms';
     CardComponent
   ],
   imports: [
-    CommonModule,RouterModule,FormsModule
+    CommonModule,RouterModule,FormsModule,RouterModule
   ],
   exports: [
     HeaderComponent,

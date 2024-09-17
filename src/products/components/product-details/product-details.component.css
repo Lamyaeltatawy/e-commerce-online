@@ -1,0 +1,32 @@
+.container{
+    .card{
+        text-align: center;
+        padding: 10px;
+        .header{
+            display: flex;
+            justify-content: center;
+            margin-bottom: 27px;
+           img{
+            width: 50%;
+            height: 28rem;
+           } 
+        }
+        .details{
+            p{
+                color: gray;
+            }
+
+            .price{
+                
+                span{
+                    background-color: #ff8100;
+                width: min-content;
+                border-radius: 20px;
+                padding: 6px;
+                color: white;
+                width: fit-content;
+                }
+            }
+        }
+    }
+}

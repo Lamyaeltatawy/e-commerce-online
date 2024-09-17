@@ -1,6 +1,6 @@
-<div class="container">
-    <div class="card" style="width: 18rem;" *ngFor="let product of data">
-        <img src="{{product.image}}" class="card-img-top" alt="product" 
+<div class="container" >
+    <div class="card"   style="width: 18rem;" *ngFor="let product of data">
+        <img routerLink="/details/{{ product.id}}" src="{{product.image}}" class="card-img-top" alt="product" 
             style="width: 50%; height:13rem;">
         <div class="card-body">
             <div class="description">

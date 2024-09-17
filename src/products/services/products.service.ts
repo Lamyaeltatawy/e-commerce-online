@@ -16,5 +16,9 @@ export class ProductsService {
   }
   GetFilteredProducts(selectedCategory:string){
     return this.http.get(environment.baseApi +'products/category/'+selectedCategory);
-  }}
+  }
+  GetSingleProduct(id:string){
+    return this.http.get(environment.baseApi +'products/'+id);
+  }
+}
   

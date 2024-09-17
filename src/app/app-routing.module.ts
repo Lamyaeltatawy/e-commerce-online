@@ -10,7 +10,7 @@ const routes: Routes = [
   {path:'',component:LayoutComponent,children:[
     {path:'',redirectTo:'products', pathMatch:'full' },
     { path: 'products', component: AllProductsComponent },
-    { path: 'details', component: ProductDetailsComponent },
+    { path: 'details/:id', component: ProductDetailsComponent },
     { path: 'cart', component: CartComponent },
   ]},
   {path:'login',component:LoginComponent},

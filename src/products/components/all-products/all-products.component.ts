@@ -11,6 +11,7 @@ export class AllProductsComponent implements OnInit {
   loading:boolean=false;
   title:string="Category";
   cartProducts:any[]=[];
+  item:any;
 
   constructor(private service: ProductsService) { }
 
@@ -60,6 +61,7 @@ export class AllProductsComponent implements OnInit {
     }
   }
   addProductToCart(product:any){
+    this.item=product
     console.log("producttt",product);
     
     
@@ -85,5 +87,8 @@ export class AllProductsComponent implements OnInit {
       this.cartProducts.push(product)  
       localStorage.setItem("cart", JSON.stringify(this.cartProducts))
     }
+  }
+  productDetails(){
+    
   }
 }

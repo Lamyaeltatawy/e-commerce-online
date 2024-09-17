@@ -17,7 +17,8 @@ import { FormsModule } from '@angular/forms';
     CommonModule,
      HttpClientModule,
       SharedModule,
-      FormsModule
+      FormsModule,
+
   ],
   exports: [
     AllProductsComponent,

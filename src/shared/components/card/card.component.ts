@@ -1,5 +1,6 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { FormGroup } from '@angular/forms';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-card',
@@ -11,7 +12,7 @@ export class CardComponent implements OnInit {
   @Output() selectedProductId =new EventEmitter();
   clicked: boolean =false;
   input:number=0
-  constructor() { }
+  constructor(private router:Router) { }
 
   ngOnInit(): void {
   }
@@ -22,5 +23,7 @@ export class CardComponent implements OnInit {
     this.selectedProductId.emit(product)
 
   }
+ 
+
 
 }

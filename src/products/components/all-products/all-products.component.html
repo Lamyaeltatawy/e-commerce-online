@@ -2,8 +2,8 @@
 <div class="my-2">
     <app-select [label]="title" [data]="categoriesList" (selectedValue)="reciveSelectedCategory($event)"></app-select>
 </div>
-<section class="products-list" *ngIf="!loading">
-    <app-card [data]="productsList" (selectedProductId)="addProductToCart($event)"></app-card>
+<section class="products-list" *ngIf="!loading"  routerLinkActive="router-link-active" >
+    <app-card  [data]="productsList" (selectedProductId)="addProductToCart($event)"></app-card>
 </section>
 <div class="spinner mt-4"*ngIf="loading">
     <app-spinner></app-spinner>
