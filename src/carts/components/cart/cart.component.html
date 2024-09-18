@@ -30,8 +30,9 @@
                   
                 </tbody>
               </table>
-              <div class="successFooter">
-                <button type="button" *ngIf="!successMessage" (click)="addCart()" class="btn btn-success">Order Now</button>
+              <div class="successFooter" *ngIf="!successMessage">
+                <p>total: <b>{{total}} $</b></p>
+                <button type="button"  (click)="addCart()" class="btn btn-success">Order Now</button>
               </div>
         </div>
     </div>
