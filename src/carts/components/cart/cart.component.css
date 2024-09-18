@@ -1,0 +1,43 @@
+.container{
+    .header{
+        
+     display: flex;
+     justify-content: space-between;
+     .clear{
+        display: flex;
+        align-items: center;
+     }
+     h6{
+        margin-left: 15px;
+        color: gray;
+        i{
+            color: #ff8100;
+            font-weight: 600;
+        }
+     }
+    }
+    .body{
+     table{
+      margin-bottom: 20px;
+        tbody{
+            tr{
+                td{
+                    img{
+                        width: 100px;
+                        height: 100px;
+                    }
+                }
+            }
+        }
+     }
+     .successFooter{
+        display: flex;
+        justify-content: end;
+     }
+    }
+    .footer{
+        background-color: #53b953;
+        color: #186f12;
+        padding: 14px;
+        }
+}
