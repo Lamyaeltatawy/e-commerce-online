@@ -1,3 +1,9 @@
+*{
+    padding-right: 0px !important;
+}
 .sideBar{
     background-color: #ff8100;
+}
+.main{
+    padding-right: 12px !important;
 }

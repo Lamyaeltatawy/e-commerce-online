@@ -1,0 +1,24 @@
+
+.container{
+    padding: 33px 0px 0px 0px;
+    color: white;
+    ul{
+        list-style: none;
+        padding: 0px;
+        li{
+            font-family: cursive;
+            padding: 20px;
+            font-size: 21px;
+            p{
+                margin: 0px;
+                i{
+
+                }
+            }
+        }
+    }
+}
+li:hover{
+    background-color: rgba(175, 175, 175, 0.459);
+    
+}
