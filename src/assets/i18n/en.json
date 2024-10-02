@@ -32,5 +32,9 @@
     "message":"your order is successfully sent",
     "deleteAll":"Clear shopping cart"
 
+  },
+  "card":{
+    "add_cart":"Add to cart",
+    "add":"Add"
   }
 }
