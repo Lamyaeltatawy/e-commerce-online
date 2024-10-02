@@ -1,0 +1,37 @@
+{ 
+  "title":"العنوان",
+"products":{
+  "title":"قائمة المنتجات"
+
+},   
+"allproducts":{
+    "label":"الاقسام",
+    "category":{
+      "placeholder":"الكل"
+    }
+  },
+  "sideBar":{
+   "home":"الرئيسيه",
+   "cart":"المتجر",
+   "products":"المنتجات",
+   "about":" نبذه عنا"
+  },
+  "cart":{
+    "title":"عربة التسوق",
+    "details":"لديك",
+    "of_order":"منتج فى السله",
+    "table":{
+      "id":"الكود",
+    "product":"المنتج",
+    "quantity":"الكميه",
+    "price":"السعر"
+    },
+    "delete":"حذف",
+    "total":"المجموع",
+    "order":"اطلب الان",
+    "success":"تهانيا!",
+    "message":"تم اتمام طلبك بنجاح",
+    "deleteAll":"حذف جميع المنتجات"
+  }
+  
+  }

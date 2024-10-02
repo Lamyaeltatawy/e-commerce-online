@@ -11,8 +11,13 @@ import { SpinnerComponent } from './components/spinner/spinner.component';
 import { SelectComponent } from './components/select/select.component';
 import { CardComponent } from './components/card/card.component';
 import { FormsModule } from '@angular/forms';
+import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
+import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+import { HttpClient } from '@angular/common/http';
 
-
+export function HttpLoaderFactory(http: HttpClient) {
+  return new TranslateHttpLoader(http, './assets/i18n/', '.json');
+}
 
 @NgModule({
   declarations: [
@@ -23,20 +28,30 @@ import { FormsModule } from '@angular/forms';
     TruncatePipe,
     SpinnerComponent,
     SelectComponent,
-    CardComponent
+    CardComponent,
   ],
   imports: [
-    CommonModule,RouterModule,FormsModule,RouterModule
+    CommonModule,
+    RouterModule,
+    FormsModule,
+    RouterModule,
+    TranslateModule.forRoot({
+      loader: {
+        provide: TranslateLoader,
+        useFactory: HttpLoaderFactory,
+        deps: [HttpClient],
+      },
+    }),
   ],
   exports: [
     HeaderComponent,
-     FooterComponent,
-      SidebarComponent,
-       TruncatePipe,
-       LayoutComponent,
-       SpinnerComponent,
-       SelectComponent,
-       CardComponent
-      ],
+    FooterComponent,
+    SidebarComponent,
+    TruncatePipe,
+    LayoutComponent,
+    SpinnerComponent,
+    SelectComponent,
+    CardComponent,
+  ],
 })
-export class SharedModule { }
+export class SharedModule {}

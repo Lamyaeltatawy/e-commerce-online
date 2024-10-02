@@ -3,19 +3,19 @@
     <div>
         <div class="header">
             <div>
-                <h1>Shopping Cart</h1>
-                <h6>you have <i>{{data.length}}</i> item in your cart</h6>
+                <h1>{{"cart.title"|translate}}</h1>
+                <h6>{{"cart.details"|translate}} <i>{{data.length}}</i> {{"cart.of_order"|translate}}</h6>
             </div>
-            <div class="clear"><button (click)="clearCart()" type="button" class="btn btn-outline-danger">Clear shopping cart</button></div>
+            <div class="clear"><button (click)="clearCart()" type="button" class="btn btn-outline-danger">{{"cart.deleteAll"|translate}}</button></div>
         </div>
         <div class="body">
             <table class="table table-hover">
                 <thead>
                   <tr>
-                    <th scope="col">id</th>
-                    <th scope="col">product</th>
-                    <th scope="col">quantity</th>
-                    <th scope="col">price</th>
+                    <th scope="col">{{"cart.table.id"|translate}}</th>
+                    <th scope="col">{{"cart.table.product"|translate}}</th>
+                    <th scope="col">{{"cart.table.quantity"|translate}}</th>
+                    <th scope="col">{{"cart.table.price"|translate}}</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -24,19 +24,19 @@
                     <td><img src="{{item.image}}" alt=""></td>
                     <td>{{item.quantity }}</td>
                     <td>{{item.price}} $</td>
-                    <td><button type="button" (click)="deleteProduct(index)" class="btn btn-danger">Delete</button>
+                    <td><button type="button" (click)="deleteProduct(index)" class="btn btn-danger">{{"cart.delete"|translate}}</button>
                     </td>
                   </tr>
                   
                 </tbody>
               </table>
               <div class="successFooter" *ngIf="!successMessage">
-                <p>total: <b>{{total}} $</b></p>
-                <button type="button"  (click)="addCart()" class="btn btn-success">Order Now</button>
+                <p>{{"cart.total"|translate}}: <b>{{total}} $</b></p>
+                <button type="button"  (click)="addCart()" class="btn btn-success">{{"cart.order"|translate}}</button>
               </div>
         </div>
     </div>
     <div class="footer" *ngIf="successMessage">
-        <span><b>Well done!</b> your order is successfully sent</span>
+        <span><b>{{"cart.success"|translate}}</b> {{"cart.message"|translate}}</span>
     </div>
 </div>

@@ -1,6 +1,6 @@
-<label class="">{{label}} :</label>
+<label class="">{{"allproducts.label"|translate}} :</label>
     <select class="form-control my-2 w-25" (change)="filterCategory($event)">
-        <option value="all" selected>All</option>
+        <option value="all" selected>{{"allproducts.category.placeholder"|translate}}</option>
         <option value="{{category}}" *ngFor="let category of data">{{category}}</option>
         
 

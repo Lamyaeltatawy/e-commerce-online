@@ -8,4 +8,15 @@
   .navbar-nav li {
     margin-right: 25px;
   }
+  .navbar-nav li:last-child {
+    margin: 0px;
+    transform: translate(0px, 8px);
+  }
   
+
+  .collapse ul{
+    margin: auto;
+  }
+  .navbar-brand{
+    margin: 0px !important;
+  }

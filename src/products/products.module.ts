@@ -5,6 +5,7 @@ import { ProductDetailsComponent } from './components/product-details/product-de
 import { HttpClientModule } from '@angular/common/http';
 import { SharedModule } from 'src/shared/shared.module';
 import { FormsModule } from '@angular/forms';
+import { TranslateModule } from '@ngx-translate/core';
 
 
 
@@ -18,6 +19,7 @@ import { FormsModule } from '@angular/forms';
      HttpClientModule,
       SharedModule,
       FormsModule,
+      TranslateModule
 
   ],
   exports: [

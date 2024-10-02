@@ -1,0 +1,36 @@
+{
+  "title": "title",
+  "products": {
+    "title": "Product List"
+  },
+  "allproducts":{
+    "label":"Category",
+    "category":{
+      "placeholder":"All"
+    }
+  },
+  "sideBar":{
+   "home":"Home",
+   "cart":"Cart",
+   "products":"Broducts",
+   "about":"About us"
+  },
+  "cart":{
+    "title":"Shopping Cart",
+    "details":"you have",
+    "of_order":"item in your cart",
+    "table":{
+      "id":"id",
+    "product":"product",
+    "quantity":"quantity",
+    "price":"price"
+    },
+    "delete":"Delete",
+    "total":"total",
+    "order":"Order Now",
+    "success":"Well done!",
+    "message":"your order is successfully sent",
+    "deleteAll":"Clear shopping cart"
+
+  }
+}
